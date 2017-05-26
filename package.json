@@ -1,0 +1,11 @@
+{
+  "name": "react-med-lib",
+  "version": "1.0.0",
+  "description": "React Medellin Component Library",
+  "main": "index.js",
+  "author": "Alejandro Nanez <alejonanez@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
