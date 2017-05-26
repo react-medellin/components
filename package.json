@@ -2,7 +2,7 @@
   "name": "react-med-lib",
   "version": "1.0.0",
   "description": "React Medellin Component Library",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Alejandro Nanez <alejonanez@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -13,7 +13,10 @@
     "eslint-plugin-react": "^7.0.1"
   },
   "scripts": {
-	  "lint": "eslint src/**/*.js",
-	  "lint:fix": "eslint src/**/*.js --fix" 
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
+  },
+  "dependencies": {
+    "react": "^15.5.4"
   }
 }
