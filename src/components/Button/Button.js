@@ -1,7 +1,5 @@
 import React from 'react';
 
-const Button = ({ content }) => (
-	<button>{content}</button>
+export const Button = () => (
+	<button>I am a dumb component</button>
 );
-
-export default Button;
