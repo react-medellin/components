@@ -34,6 +34,7 @@
     "lint:fix": "eslint src/**/*.js --fix"
   },
   "dependencies": {
-    "react": "^15.5.4"
+    "react": "^15.5.4",
+    "styled-components": "^2.0.0"
   }
 }
