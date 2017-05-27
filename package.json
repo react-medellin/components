@@ -28,7 +28,8 @@
     "uglify-es": "^3.0.11"
   },
   "scripts": {
-    "rollup": "rollup --config",
+    "dev": "rollup --config",
+    "dev:watch": "rollup --config --watch",
     "build": "NODE_ENV=production rollup --config",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix"
