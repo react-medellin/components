@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {
 	seaSerpent,
 	white,
+	tealBlue,
 	maximumBlue,
 	smallFont,
 	mediumFont,
@@ -22,8 +23,9 @@ const getButtonSize = props => fontSizes[props.size] || fontSizes.default;
 
 // Base Button Styles
 const ButtonStyles = styled.button`
-	border-radius: .2em;
+	border-radius: .1em;
 	padding: .5em 1em;
+	outline: none;
 	font-size: ${props => getButtonSize(props)};
 	transition: background-color ${ANIMATION_TIME} ease,
 				color ${ANIMATION_TIME} ease,
@@ -41,8 +43,8 @@ const PrimaryButton = ButtonStyles.extend`
 	border: 1px solid ${white};
 
 	:hover {
-		background: ${maximumBlue};
-		border: 1px solid ${maximumBlue};
+		background: ${tealBlue};
+		border: 1px solid ${tealBlue};
 		color: ${white};
 	}
 `;
@@ -51,12 +53,11 @@ const PrimaryButton = ButtonStyles.extend`
 const SecondaryButton = ButtonStyles.extend`
 	background: ${white};
 	color: ${seaSerpent};
-	border: 1px solid ${seaSerpent};
+	border: 1px solid ${maximumBlue};
 
 	:hover {
-		background: ${seaSerpent};
-		border: 1px solid ${white};
-		color: ${white};
+		border: 1px solid ${tealBlue};
+		color: ${tealBlue};
 	}
 `;
 
@@ -69,9 +70,9 @@ const buttonTypes = {
 const getButtonType = props => buttonTypes[props.type] || buttonTypes.default;
 
 export const Button = (props) => {
-	const ButtonType = getButtonType(props);
+	const Btn = getButtonType(props);
 
 	return (
-		<ButtonType {...props}>{props.children}</ButtonType>
+		<Btn {...props}>{props.children}</Btn>
 	);
 };
