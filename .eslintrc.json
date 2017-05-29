@@ -4,7 +4,8 @@
     "plugins": [
         "react",
         "jsx-a11y",
-        "import"
+        "import",
+		"jest"
     ],
 	"rules": {
 		"indent": ["error", "tab"],
@@ -15,5 +16,8 @@
 		"react/prop-types": "warn",
 		"import/prefer-default-export": "off",
 		"comma-dangle": "off"
-	}
+	},
+	"env": {
+    	"jest/globals": true
+  	}
 }
