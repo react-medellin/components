@@ -1,8 +1,12 @@
 {
 	"parser": "babel-eslint",
-    "extends": "airbnb",
+    "extends": [
+		"airbnb",
+		"plugin:flowtype/recommended"
+	],
     "plugins": [
         "react",
+		"flowtype",
         "jsx-a11y",
         "import",
 		"jest"
@@ -14,6 +18,7 @@
 		"react/jsx-indent": ["error", "tab"],
 		"react/jsx-indent-props": ["error", "tab"],
 		"react/prop-types": "warn",
+		"react/require-default-props": "off",
 		"import/prefer-default-export": "off",
 		"comma-dangle": "off"
 	},

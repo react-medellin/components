@@ -2,6 +2,7 @@ const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
 const babel = require('rollup-plugin-babel');
 const uglify = require('rollup-plugin-uglify');
+const flow = require('rollup-plugin-flow');
 const { minify } = require('uglify-es');
 const pkg = require('./package.json');
 
@@ -10,7 +11,8 @@ const plugins = [
 	commonjs(),
 	babel({
 		exclude: 'node_modules/**'
-	})
+	}),
+	flow()
 ];
 
 if (process.env.NODE_ENV === 'production') {
