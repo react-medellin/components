@@ -4,15 +4,20 @@
     "plugins": [
         "react",
         "jsx-a11y",
-        "import"
+        "import",
+		"jest"
     ],
 	"rules": {
 		"indent": ["error", "tab"],
 		"no-tabs": "off",
 		"react/jsx-filename-extension": "off",
 		"react/jsx-indent": ["error", "tab"],
+		"react/jsx-indent-props": ["error", "tab"],
 		"react/prop-types": "warn",
 		"import/prefer-default-export": "off",
 		"comma-dangle": "off"
-	}
+	},
+	"env": {
+    	"jest/globals": true
+  	}
 }

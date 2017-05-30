@@ -73,6 +73,11 @@ export const Button = (props) => {
 	const Btn = getButtonType(props);
 
 	return (
-		<Btn {...props}>{props.children}</Btn>
+		<Btn
+			{...props}
+			onClick={props.onClick}
+		>
+			{props.children}
+		</Btn>
 	);
 };
