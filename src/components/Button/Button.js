@@ -24,8 +24,15 @@ const ANIMATION_TIME = '500ms';
 
 const getButtonSize = props => fontSizes[props.size] || fontSizes.default;
 
+const buttons = {
+	primary: 'primary',
+	secondary: 'secondary'
+};
+
 // Base Button Styles
-const ButtonStyles = styled.button`
+export const ButtonStyles = styled.button.attrs({
+	'data-button-type': props => buttons[props.type] || buttons.primary
+})`
 	border-radius: .1em;
 	padding: .5em 1em;
 	outline: none;
@@ -40,7 +47,7 @@ const ButtonStyles = styled.button`
 `;
 
 // Primary Button Styles
-const PrimaryButton = ButtonStyles.extend`
+export const PrimaryButton = ButtonStyles.extend`
 	background: ${seaSerpent};
 	color: ${white};
 	border: 1px solid ${white};
@@ -53,7 +60,7 @@ const PrimaryButton = ButtonStyles.extend`
 `;
 
 // Default Button Styles
-const SecondaryButton = ButtonStyles.extend`
+export const SecondaryButton = ButtonStyles.extend`
 	background: ${white};
 	color: ${seaSerpent};
 	border: 1px solid ${maximumBlue};
@@ -73,7 +80,7 @@ const buttonTypes = {
 type Props = {
 	type?: string;
 	onClick: () => void;
-	children: React$Element<*>
+	children?: React$Element<*>
 };
 
 export const Button = (props: Props) => {
