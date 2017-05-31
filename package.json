@@ -45,7 +45,8 @@
     "lint:fix": "eslint src/**/*.js --fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "flow": "flow"
+    "flow": "flow",
+	"quality": "npm run flow && npm run lint && npm run test"
   },
   "dependencies": {
     "react": "^15.5.4",
