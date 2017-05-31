@@ -1,9 +1,7 @@
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
 const babel = require('rollup-plugin-babel');
-const uglify = require('rollup-plugin-uglify');
 const flow = require('rollup-plugin-flow');
-const { minify } = require('uglify-es');
 const pkg = require('./package.json');
 
 const plugins = [
@@ -14,14 +12,6 @@ const plugins = [
 	}),
 	flow()
 ];
-
-if (process.env.NODE_ENV === 'production') {
-	plugins.push(
-		// Since we're using ES modules we need this _hack_
-		// https://github.com/TrySound/rollup-plugin-uglify#warning
-		uglify({}, minify)
-	);
-}
 
 const config = {
 	banner: `/* react-med-lib version ${pkg.version} */`,

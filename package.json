@@ -34,14 +34,15 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-flow": "^1.1.1",
     "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-watch": "^3.2.2",
     "uglify-es": "^3.0.11"
   },
   "scripts": {
-    "dev": "rollup --config",
-    "dev:watch": "rollup --config --watch",
-    "build": "NODE_ENV=production rollup --config",
+    "dev": "rollup --config rollup.dev.js",
+    "dev:watch": "rollup --config rollup.dev.js --watch",
+    "build": "NODE_ENV=production rollup --config rollup.prod.js",
     "lint": "eslint src --cache",
     "lint:fix": "eslint src/**/*.js --fix",
     "test": "jest",
