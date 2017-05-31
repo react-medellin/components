@@ -1,16 +1,16 @@
 {
 	"parser": "babel-eslint",
-    "extends": [
+	"extends": [
 		"airbnb",
 		"plugin:flowtype/recommended"
 	],
-    "plugins": [
-        "react",
+	"plugins": [
+		"react",
 		"flowtype",
-        "jsx-a11y",
-        "import",
+		"jsx-a11y",
+		"import",
 		"jest"
-    ],
+	],
 	"rules": {
 		"indent": ["error", "tab"],
 		"no-tabs": "off",
@@ -23,6 +23,6 @@
 		"comma-dangle": "off"
 	},
 	"env": {
-    	"jest/globals": true
+		"jest/globals": true
   	}
 }
