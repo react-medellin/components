@@ -1,12 +1,16 @@
 {
 	"parser": "babel-eslint",
-    "extends": "airbnb",
-    "plugins": [
-        "react",
-        "jsx-a11y",
-        "import",
+	"extends": [
+		"airbnb",
+		"plugin:flowtype/recommended"
+	],
+	"plugins": [
+		"react",
+		"flowtype",
+		"jsx-a11y",
+		"import",
 		"jest"
-    ],
+	],
 	"rules": {
 		"indent": ["error", "tab"],
 		"no-tabs": "off",
@@ -14,10 +18,11 @@
 		"react/jsx-indent": ["error", "tab"],
 		"react/jsx-indent-props": ["error", "tab"],
 		"react/prop-types": "warn",
+		"react/require-default-props": "off",
 		"import/prefer-default-export": "off",
 		"comma-dangle": "off"
 	},
 	"env": {
-    	"jest/globals": true
+		"jest/globals": true
   	}
 }
