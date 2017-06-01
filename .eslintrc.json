@@ -20,7 +20,8 @@
 		"react/prop-types": "warn",
 		"react/require-default-props": "off",
 		"import/prefer-default-export": "off",
-		"comma-dangle": "off"
+		"comma-dangle": "off",
+		"import/no-extraneous-dependencies": "off"
 	},
 	"env": {
 		"jest/globals": true
