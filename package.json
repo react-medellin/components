@@ -1,6 +1,6 @@
 {
   "name": "@react-medellin/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Medellin Component Library",
   "main": "dist/index.umd.js",
   "module": "dist/index.js",
@@ -50,7 +50,7 @@
     "test:watch": "jest --watch",
     "flow": "flow",
     "quality": "npm run flow && npm run lint && npm run test",
-	"prepublish": "npm run quality && npm run build"
+    "prepublish": "npm run quality && npm run build"
   },
   "dependencies": {
     "react": "^15.5.4",
