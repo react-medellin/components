@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - '6'
+  - '7'
+deploy:
+  provider:
+    npm
+  on:
+    tags: true
+script:
+  - yarn quality
+before_install:
+  - echo "//registry.npmjs.org/:_authToken=\${AUTH_TOKEN}" > .npmrc
