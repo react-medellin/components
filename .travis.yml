@@ -1,10 +1,9 @@
 language: node_js
 node_js:
   - '6'
-  - '7'
 deploy:
-  provider:
-    npm
+  provider: npm
+  email: alejonanez@gmail.com
   on:
     tags: true
 script:
