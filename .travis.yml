@@ -9,7 +9,5 @@ deploy:
     tags: true
 script:
   - yarn quality
-  - yarn build
-  - npm publish
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${AUTH_TOKEN}" > .npmrc
