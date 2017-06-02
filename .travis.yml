@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - '6'
+notifications:
+  email: false
 deploy:
   provider: npm
   api_key: ${AUTH_TOKEN}
