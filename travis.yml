@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - '6'
+  - '7'
+deploy:
+  provider:
+    npm
+  on:
+    tags: true
+script:
+  - yarn quality
+  - yarn build
+  - yarn publish
