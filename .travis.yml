@@ -3,6 +3,7 @@ node_js:
   - '6'
 deploy:
   provider: npm
+  api_key: ${AUTH_TOKEN}
   email: alejonanez@gmail.com
   on:
     tags: true
