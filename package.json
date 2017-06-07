@@ -50,8 +50,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "flow": "flow",
-    "quality": "npm run flow && npm run lint && npm run test",
-    "prepublish": "npm run build"
+    "quality": "npm run flow && npm run lint && npm run test"
   },
   "dependencies": {
     "styled-components": "^2.0.0"
