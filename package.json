@@ -1,6 +1,6 @@
 {
   "name": "@react-medellin/components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React Medellin Component Library",
   "main": "dist/index.umd.js",
   "module": "dist/index.js",
@@ -51,7 +51,7 @@
     "test:watch": "jest --watch",
     "flow": "flow",
     "quality": "npm run lint && npm run test",
-	"deploy": "npm run quality && npm run build && npm run publish"
+    "deploy": "npm run quality && npm run build && npm run publish"
   },
   "dependencies": {
     "styled-components": "^2.0.0"
