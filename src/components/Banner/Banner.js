@@ -52,6 +52,6 @@ export const Banner = (props) => {
 	const BannerType = bannerType[type] || bannerType.default;
 
 	return (
-		<BannerType {...props}>doiasjdioasjdasiodjad</BannerType>
+		<BannerType {...props}>====={props.children}=====</BannerType>
 	);
 };
