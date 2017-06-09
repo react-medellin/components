@@ -90,6 +90,6 @@ export const Button = (props) => {
 };
 Button.propTypes = {
 	type: PropTypes.string,
-	onClick: PropTypes.fun,
+	onClick: PropTypes.func,
 	children: PropTypes.element
 };
