@@ -51,7 +51,7 @@
     "test:watch": "jest --watch",
     "flow": "flow",
     "quality": "npm run lint && npm run test",
-	"deploy": "npm run quality && npm run publish"
+	"deploy": "npm run quality && npm run build && npm run publish"
   },
   "dependencies": {
     "styled-components": "^2.0.0"
