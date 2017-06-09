@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
 	queenPink,
@@ -54,4 +55,8 @@ export const Banner = (props) => {
 	return (
 		<BannerType {...props}>====={props.children}=====</BannerType>
 	);
+};
+Banner.propTypes = {
+	type: PropTypes.string,
+	children: PropTypes.element
 };

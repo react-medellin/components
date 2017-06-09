@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
 	seaSerpent,
@@ -86,4 +87,9 @@ export const Button = (props) => {
 			{props.children}
 		</Btn>
 	);
+};
+Button.propTypes = {
+	type: PropTypes.string,
+	onClick: PropTypes.fun,
+	children: PropTypes.element
 };

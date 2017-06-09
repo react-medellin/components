@@ -54,6 +54,7 @@
     "deploy": "npm run quality && npm run build && npm publish"
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "styled-components": "^2.0.0"
   },
   "publishConfig": {
