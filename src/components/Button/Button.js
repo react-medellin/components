@@ -1,7 +1,4 @@
-// @flow
-
 import React from 'react';
-// $FlowFixMe: We're waiting on this PR to add flow here. https://github.com/styled-components/styled-components/issues/843
 import styled from 'styled-components';
 import {
 	seaSerpent,
@@ -77,13 +74,7 @@ const buttonTypes = {
 	default: PrimaryButton
 };
 
-type Props = {
-	type?: string;
-	onClick: () => void;
-	children?: React$Element<*>
-};
-
-export const Button = (props: Props) => {
+export const Button = (props) => {
 	const { type = 'default' } = props;
 	const Btn = buttonTypes[type] || buttonTypes.default;
 

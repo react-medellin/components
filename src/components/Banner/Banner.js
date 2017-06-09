@@ -1,7 +1,4 @@
-// @flow
-
 import React from 'react';
-// $FlowFixMe: We're waiting on this PR to add flow here. https://github.com/styled-components/styled-components/issues/843
 import styled from 'styled-components';
 import {
 	queenPink,
@@ -50,13 +47,7 @@ const bannerType = {
 	default: SuccessBanner
 };
 
-
-type Props = {
-	type?: string;
-	children: React$Element<*>;
-};
-
-export const Banner = (props: Props) => {
+export const Banner = (props) => {
 	const { type = 'default' } = props;
 	const BannerType = bannerType[type] || bannerType.default;
 
