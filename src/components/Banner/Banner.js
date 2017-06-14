@@ -53,7 +53,7 @@ export const Banner = (props) => {
 	const BannerType = bannerType[type] || bannerType.default;
 
 	return (
-		<BannerType {...props}>++++++++{props.children}++++++++</BannerType>
+		<BannerType {...props}>{props.children}</BannerType>
 	);
 };
 Banner.propTypes = {
