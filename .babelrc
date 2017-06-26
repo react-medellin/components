@@ -17,9 +17,6 @@
 				"flow",
 				["es2015", { "modules": false }],
 				"stage-0"
-			],
-			"plugins": [
-				"external-helpers"
 			]
 		},
 		"production": {
@@ -30,7 +27,6 @@
 				"stage-0"
 			],
 			"plugins": [
-				"external-helpers",
 				"transform-react-jsx"
 			]
 		}

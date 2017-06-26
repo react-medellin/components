@@ -10,7 +10,8 @@ const pkg = require('./package.json');
 const plugins = [
 	resolve(),
 	babel({
-		exclude: 'node_modules/**'
+		exclude: 'node_modules/**',
+		plugins: ['external-helpers']
 	}),
 	flow(),
 	replace({
