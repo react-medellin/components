@@ -4,7 +4,7 @@
 # What is @react-medellin/components
 A set of reusable React components that everyone can use. This project was created mainly to teach how to create a reusable component library to atendees to React Medellín Meetup ([Feel curious? Join us!](https://meetup.com/React-Medellin))
 
-# How can I use this components?
+# Installation
 Firs of all, this library has two peer dependencies: React and [Styled Components](https://github.com/styled-components/styled-components) so you must have those two first installed for this library to work properly.
 
 In case you're still reading (yes!) you can install this library by typing `npm install --save @react-medellin/components` or if you're using yarn you can do `yarn add @react-medellin/components`
