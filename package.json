@@ -42,6 +42,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-watch": "^3.2.2",
+    "styled-components": "^2.1.0",
     "uglify-es": "^3.0.11"
   },
   "scripts": {
@@ -56,13 +57,12 @@
     "quality": "npm run flow && npm run lint && npm run test",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
-  "dependencies": {
-    "styled-components": "^2.0.0"
-  },
+  "dependencies": {},
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "react": "^15.5.4"
+    "react": "^15.5.4",
+    "styled-components": "^2.1.0"
   }
 }
