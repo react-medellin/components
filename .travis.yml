@@ -15,4 +15,3 @@ before_install:
   - echo "//registry.npmjs.org/:_authToken=\${AUTH_TOKEN}" > .npmrc
 before_puslish:
   - yarn quality
-  - yarn build
