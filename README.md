@@ -1,5 +1,5 @@
 # React Medellín Components Library
-[![Build Status](https://travis-ci.org/react-medellin/components.svg?branch=master)](https://travis-ci.org/react-medellin/components)
+![Build Status](https://circleci.com/gh/react-medellin/components.svg?style=shield&circle-token=:circle-token)
 
 # What is @react-medellin/components
 A set of reusable React components that everyone can use. This project was created mainly to teach how to create a reusable component library to atendees to React Medellín Meetup ([Feel curious? Join us!](https://meetup.com/React-Medellin))
