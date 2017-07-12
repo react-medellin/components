@@ -20,7 +20,7 @@ const fontSizes = {
 	default: mediumFont
 };
 
-const ANIMATION_TIME = '500ms';
+const ANIMATION_TIME = '1000ms';
 
 const getButtonSize = props => fontSizes[props.size] || fontSizes.default;
 
