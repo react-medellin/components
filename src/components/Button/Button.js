@@ -31,7 +31,7 @@ const buttons = {
 
 // Base Button Styles
 export const ButtonStyles = styled.button.attrs({
-	'data-button-type': props => buttons[props.type] || buttons.primary
+	'data-button-type': props => buttons[props.type] || buttons.secondary
 })`
 	border-radius: .1em;
 	padding: .5em 1em;
